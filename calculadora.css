@@ -1,4 +1,4 @@
-section {
+section:not(.table-section) {
     height: 60px;
     background-color: #ddd;
     margin: 0 0 40px;
@@ -38,6 +38,30 @@ a {
 h1 {
     text-align: center;
     margin-bottom: 40px !important;
+}
+
+.table-section {
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+    width: 50%;
+}
+
+tr,th,td {
+    border: solid 1px #aaa !important;
+    padding: 10px;
+}
+
+th {
+    background-color: #ddd;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #efefef;
 }
 
 footer {
