@@ -11,17 +11,21 @@ ul {
     height: 40px;
 }
 
-li {
-  float: left;
+li, button {
   background-color: rgb(136, 0, 0);
   margin: 10px 20px 10px 0;
   width: 100px;
   line-height: 40px;
-  border-radius: 10px;
+  border-radius: 10px !important;
   text-align: center;
 }
 
-li:hover {
+li {
+    float: left;
+}
+
+li:hover
+,button:hover {
     transform: scale(1.1);
     transition: all 0.5s ease;
 }
@@ -32,7 +36,8 @@ a {
 }
 
 .active {
-  background-color: rgb(92, 0, 0);
+    transform: scale(1.1);
+    background-color: rgb(92, 0, 0);
 }
 
 h1 {
@@ -62,6 +67,14 @@ th {
     font-size: 20px;
     font-weight: 700;
     background-color: #efefef;
+}
+
+button {
+    color: white;
+    width: 140px;
+    margin: 0 10px !important;
+    padding: 10px;
+    border: 0;
 }
 
 footer {
