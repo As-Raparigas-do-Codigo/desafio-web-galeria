@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Quantidade</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>A pagar</th>
+    </tr>
+    <tr class="linha">
+        <td><input class="quantidade" type="number" min="1" max="10" step="1" value="1"></input></td>
+        <td class="nome">Poster 1</td>
+        <td class="preco">10.30€</td>
+        <td class="totalLinha"></td>
+    </tr>
+    <tr class="linha">
+        <td><input class="quantidade" type="number" min="1" max="10" step="1" value="1"></input></td>
+        <td class="nome">Poster 2</td>
+        <td class="preco">9.99€</td>
+        <td class="totalLinha"></td>
+    </tr>
+    <tr>
+        <td class="total" colspan=4>Total: </td>
+    </tr>
+</table>
+<button type="button" onclick="calcularTotal();">Calcular Total</button>
+
+<script src="calculadora.js"></script>
+
+</body>
+</html>
